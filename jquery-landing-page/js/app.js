@@ -9,12 +9,6 @@ $ (document).ready (function() {
 	    } else {
 	    	$("#mainNav").removeClass("affix").addClass("affix-top");
 	    }
-
-	      if ($(window).scrollTop()) {
-	    	$(".service-box").addClass("swing");
-	    } else {
-	    	$(".service-box").removeClass("swing");
-	    }
 	});
 
 	$(document).on("click", ".page-scroll", function(){
@@ -25,11 +19,7 @@ $ (document).ready (function() {
 		});
 	});
 
-	// $(window).on("scroll", function() {
-	// 	$(".service-box").animateCss("swing");
-	// });
-
-
+	//I did it this way and this worked as well, is there a benefit to doing it tis way instead?
 	// $(".page-scroll").click(function(){
 	    
 	//event.preventDefault();
@@ -41,9 +31,5 @@ $ (document).ready (function() {
 	// });
 
 	// $("body").scrollspy({ target: "#mainNav" });
-
-
-	
-
 
 });
